@@ -4,11 +4,56 @@ body {
   font-family: sans-serif;
 }
 
+h1 {
+  text-align: center;
+  margin: 50px;
+  vertical-align: top;
+}
+
+.div1-section1 {
+  width: 70%;
+  float: left;
+}
+
+.div2-section1 {
+  width: 30%;
+  float: right;
+  padding-right: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 20px;
+}
+
+.grid2 {
+
+}
+
+.grid3 {
+  display: grid;
+  width: 80%;
+  margin-left: 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 20px;
+}
+
+img {
+  border-radius: 50%;
+  display: flex;
+  height: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  color: white;
+}
+
 section {
   height: 100vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
   color: white;
   scroll-snap-align: start;
 }
@@ -17,15 +62,33 @@ section {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
   height: 100vh;
+}
 
+.h1-fancy {
+  justify-content: center;
+  text-align: center;
 }
 
 .section1 {
+  justify-content: flex-start;
+  align-items: center;
   background-color: rgb(36, 164, 138)
 }
+
 .section2 {
+  justify-content: flex-start;
+  align-items: center;
   background-color: rgb(211, 79, 79)
 }
+
 .section3 {
+  display: grid;
+  justify-content: flex-start;
+  align-items: center;
   background-color: rgb(67, 91, 175)
+}
+
+.section4 {
+  display: grid;
+  background-color: rgb(251, 177, 23)
 }
